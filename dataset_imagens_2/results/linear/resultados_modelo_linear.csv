@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão,Recall,F1-Score,ROC-AUC,CV Acurácia (μ)
+Regressão Linear,0.9544,0.8636,0.8261,0.8444,0.9881,0.9113
