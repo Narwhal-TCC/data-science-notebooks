@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão,Recall,F1-Score,ROC-AUC,CV Acurácia (μ)
+SVM (kernel=rbf),0.9038,0.963,0.8667,0.9123,0.9682,0.6393

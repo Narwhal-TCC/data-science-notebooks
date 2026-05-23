@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão,Recall,F1-Score,ARI,Silhouette Score,Inércia
+K-Means (k=2),0.5337,0.5337,1.0,0.6959,-0.0044,0.2242,10657.0735

@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão,Recall,F1-Score,ROC-AUC,CV Acurácia (μ)
+KNN (k=5),0.9231,0.9643,0.9,0.931,0.9636,0.5668

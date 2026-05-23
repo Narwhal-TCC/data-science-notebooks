@@ -1,0 +1,2 @@
+Modelo,Acurácia,Precisão,Recall,F1-Score,ROC-AUC,CV Acurácia (μ)
+Árvore de Decisão,0.8462,0.9231,0.8,0.8571,0.8621,0.611
