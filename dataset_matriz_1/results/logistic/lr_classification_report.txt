@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+   Rocha (0)       0.71      0.96      0.81        23
+    Mina (1)       0.91      0.53      0.67        19
+
+    accuracy                           0.76        42
+   macro avg       0.81      0.74      0.74        42
+weighted avg       0.80      0.76      0.75        42
