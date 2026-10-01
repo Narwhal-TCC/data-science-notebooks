@@ -1,0 +1,3 @@
+modelo,mAP_50,mAP_50_95,AP_75,AP_small,AP_medium,AP_large
+A - YOLO+P2,0.704,0.356,0.33,0.342,0.405,0.0
+B - YOLO+P2+CBAM,0.67,0.326,0.251,0.301,0.397,0.005

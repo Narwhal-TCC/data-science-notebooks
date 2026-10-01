@@ -1,2 +1,10 @@
 .venv/
 dataset_matriz_1/example_mlflow/mlflow-local/
+MODELS/TESTE_BOX_YOLO/work/yolo_dataset/
+MODELS/raw_data/
+MODELS/TESTE_JUNCAO/crops_dataset/
+MODELS/TESTES_COM_RT_DETR/dataset_rtdetr_binary/
+MODELS/TESTES_COM_R_CNN_FASTER/raw_data/
+MODELS/TESTES_COM_R_CNN_FASTER/dataset_yolo/
+MODELS/TESTES_COM_R_CNN_FASTER/checkpoints/
+MODELS/TESTES_COM_RT_DETR/rtdetr-l.pt

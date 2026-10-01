@@ -1,0 +1,3 @@
+modelo,precisao,recall,F1
+A - YOLO+P2,0.831,0.63,0.7167
+B - YOLO+P2+CBAM,0.763,0.633,0.6919
