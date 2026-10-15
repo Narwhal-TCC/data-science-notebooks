@@ -1,0 +1,356 @@
+[
+ {
+  "id": "b1_convnextpico_224",
+  "group": "B1",
+  "desc": "ConvNeXt-Pico 224 px, fine-tuning completo, AdamW+cosine",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "drop_path": 0.1
+  },
+  "status": "done"
+ },
+ {
+  "id": "b1_convnextpico_128",
+  "group": "B1",
+  "desc": "ConvNeXt-Pico 128 px",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 128,
+   "backbone": "convnext_pico"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b1_effv2b0_224",
+  "group": "B1",
+  "desc": "EfficientNetV2-B0 224 px",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "tf_efficientnetv2_b0"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b1_mnv2_224",
+  "group": "B1",
+  "desc": "MobileNetV2 224 px (fine-tuning completo)",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "mobilenetv2_100"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_adam_plateau",
+  "group": "B2",
+  "desc": "Adam com LR constante (como a fus\u00e3o antiga)",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "optimizer": "adam",
+   "wd": 0,
+   "scheduler": "plateau"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_sgd_nesterov",
+  "group": "B2",
+  "desc": "SGD Nesterov lr 0.01 + cosine",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "optimizer": "sgd",
+   "lr": 0.01,
+   "wd": 0.0001,
+   "head_lr_mult": 1
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_sam_adamw",
+  "group": "B2",
+  "desc": "SAM (rho 0.05) sobre AdamW",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "optimizer": "sam",
+   "sam_base": "adamw"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_sgd_lr002",
+  "group": "B2",
+  "desc": "SGD Nesterov lr 0.002 (backbone) \u00d710 na cabe\u00e7a + cosine",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "optimizer": "sgd",
+   "lr": 0.002,
+   "wd": 0.0001,
+   "head_lr_mult": 10
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_focal",
+  "group": "B2",
+  "desc": "AdamW + Focal Loss (gamma 2)",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "loss": "focal"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b2_label_smoothing",
+  "group": "B2",
+  "desc": "AdamW + label smoothing 0.1",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "label_smoothing": 0.1
+  },
+  "status": "done"
+ },
+ {
+  "id": "b3_margem030",
+  "group": "B3",
+  "desc": "Recorte com margem 30%",
+  "cfg": {
+   "modo": "m0.3",
+   "img_size": 224,
+   "backbone": "convnext_pico"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b3_margem050",
+  "group": "B3",
+  "desc": "Recorte com margem 50%",
+  "cfg": {
+   "modo": "m0.5",
+   "img_size": 224,
+   "backbone": "convnext_pico"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b3_quadrado2x",
+  "group": "B3",
+  "desc": "Janela quadrada (2\u00d7 o maior lado da caixa)",
+  "cfg": {
+   "modo": "q2",
+   "img_size": 224,
+   "backbone": "convnext_pico"
+  },
+  "status": "done"
+ },
+ {
+  "id": "b4_fusao_convnext_mnv2",
+  "group": "B4",
+  "desc": "Fus\u00e3o ConvNeXt-Pico + MobileNetV2",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": [
+    "convnext_pico",
+    "mobilenetv2_100"
+   ],
+   "batch_size": 12
+  },
+  "status": "done"
+ },
+ {
+  "id": "b4_fusao_convnext_effv2",
+  "group": "B4",
+  "desc": "Fus\u00e3o ConvNeXt-Pico + EfficientNetV2-B0",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": [
+    "convnext_pico",
+    "tf_efficientnetv2_b0"
+   ],
+   "batch_size": 12
+  },
+  "status": "done"
+ },
+ {
+  "id": "b4_fusao_convnext_ghostnet",
+  "group": "B4",
+  "desc": "Fus\u00e3o ConvNeXt-Pico + GhostNet",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": [
+    "convnext_pico",
+    "ghostnet_100"
+   ],
+   "batch_size": 12
+  },
+  "status": "done"
+ },
+ {
+  "id": "b5_fundo_3classes",
+  "group": "B5",
+  "desc": "3 classes (MILCO, NOMBO, fundo) para rejeitar falsos positivos do detector",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "fundo": true
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b1_convnextpico_224_s43",
+  "group": "F",
+  "desc": "Finalista b1_convnextpico_224 \u2014 semente 43",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "drop_path": 0.1,
+   "seed": 43
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b1_convnextpico_224_s44",
+  "group": "F",
+  "desc": "Finalista b1_convnextpico_224 \u2014 semente 44",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "drop_path": 0.1,
+   "seed": 44
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b2_label_smoothing_s43",
+  "group": "F",
+  "desc": "Finalista b2_label_smoothing \u2014 semente 43",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "label_smoothing": 0.1,
+   "seed": 43
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b2_label_smoothing_s44",
+  "group": "F",
+  "desc": "Finalista b2_label_smoothing \u2014 semente 44",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "label_smoothing": 0.1,
+   "seed": 44
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b3_margem030_s43",
+  "group": "F",
+  "desc": "Finalista b3_margem030 \u2014 semente 43",
+  "cfg": {
+   "modo": "m0.3",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "seed": 43
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b3_margem030_s44",
+  "group": "F",
+  "desc": "Finalista b3_margem030 \u2014 semente 44",
+  "cfg": {
+   "modo": "m0.3",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "seed": 44
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b1_convnextpico_128_s43",
+  "group": "F",
+  "desc": "Finalista b1_convnextpico_128 \u2014 semente 43",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 128,
+   "backbone": "convnext_pico",
+   "seed": 43
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b1_convnextpico_128_s44",
+  "group": "F",
+  "desc": "Finalista b1_convnextpico_128 \u2014 semente 44",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 128,
+   "backbone": "convnext_pico",
+   "seed": 44
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b5_fundo_3classes_s43",
+  "group": "F",
+  "desc": "Finalista b5_fundo_3classes \u2014 semente 43",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "fundo": true,
+   "seed": 43
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b5_fundo_3classes_s44",
+  "group": "F",
+  "desc": "Finalista b5_fundo_3classes \u2014 semente 44",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "fundo": true,
+   "seed": 44
+  },
+  "status": "done"
+ },
+ {
+  "id": "f_b2_label_smoothing_s42",
+  "group": "F",
+  "desc": "Retreino do b2_label_smoothing (semente 42) \u2014 o best.pt original foi apagado para liberar disco",
+  "cfg": {
+   "modo": "m0.15",
+   "img_size": 224,
+   "backbone": "convnext_pico",
+   "label_smoothing": 0.1
+  },
+  "status": "done"
+ }
+]

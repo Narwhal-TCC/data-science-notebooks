@@ -1,0 +1,28 @@
+{
+ "descricao": "Fluxo de 2 etapas: YOLO (Modelo A, TTA) localiza → recorte com margem → ConvNeXt-Pico (3 sementes) classifica MILCO × NOMBO",
+ "detector": {
+  "pesos": "../../TESTE_BOX_YOLO/runs/detect/work/runs/modelA_yolo_p2/weights/best.pt",
+  "imgsz": 640,
+  "augment": true,
+  "conf": 0.2,
+  "iou_nms": 0.5
+ },
+ "classificador": {
+  "arquivos": [
+   "classificador_recortes_b1_convnextpico_224_s42.pt",
+   "classificador_recortes_b1_convnextpico_224_s43.pt",
+   "classificador_recortes_b1_convnextpico_224_s44.pt"
+  ],
+  "modo": "m0.15",
+  "img_size": 224,
+  "aceita_min": 0.6
+ },
+ "metricas_teste": {
+  "MILCO_precisao": 0.6585365853658537,
+  "MILCO_recall": 0.72,
+  "MILCO_f1": 0.6878980891719746,
+  "MILCO_AP50": 0.6788867871629994,
+  "img_auc": 0.9607949412827461
+ },
+ "origem": "MODELS/TESTES_RECORTES_YOLO_CONVNEXT/resultados/pipeline/fase_c.json (P4_novo; conf e limiar escolhidos na validação)"
+}

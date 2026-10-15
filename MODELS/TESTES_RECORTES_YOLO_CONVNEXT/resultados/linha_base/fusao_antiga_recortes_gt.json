@@ -1,0 +1,48 @@
+{
+ "val": {
+  "acc": 0.7866666666666666,
+  "f1_macro": 0.76,
+  "matriz": [
+   [
+    42,
+    8
+   ],
+   [
+    8,
+    17
+   ]
+  ],
+  "f1_MILCO": 0.84,
+  "prec_MILCO": 0.84,
+  "rec_MILCO": 0.84,
+  "f1_NOMBO": 0.68,
+  "prec_NOMBO": 0.68,
+  "rec_NOMBO": 0.68,
+  "auc_MILCO_vs_NOMBO": 0.8623999999999999,
+  "acc_objetos_2cls": 0.7866666666666666,
+  "f1_MILCO_objetos_2cls": 0.84
+ },
+ "test": {
+  "acc": 0.8073394495412844,
+  "f1_macro": 0.7806841046277666,
+  "matriz": [
+   [
+    63,
+    12
+   ],
+   [
+    9,
+    25
+   ]
+  ],
+  "f1_MILCO": 0.8571428571428571,
+  "prec_MILCO": 0.875,
+  "rec_MILCO": 0.84,
+  "f1_NOMBO": 0.704225352112676,
+  "prec_NOMBO": 0.6756756756756757,
+  "rec_NOMBO": 0.7352941176470589,
+  "auc_MILCO_vs_NOMBO": 0.8282352941176471,
+  "acc_objetos_2cls": 0.8073394495412844,
+  "f1_MILCO_objetos_2cls": 0.8571428571428571
+ }
+}
