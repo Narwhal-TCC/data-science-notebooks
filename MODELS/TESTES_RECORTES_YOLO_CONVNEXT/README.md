@@ -49,10 +49,10 @@ pipe = Pipeline("modelos/pipeline_config_fusao_recall.json")  # ou ..._fusao_equ
 deteccoes = pipe.analisar("imagem.jpg")                       # [{caixa, conf_detector, prob_MILCO, classe}]
 ```
 
-- **Pesos fora do git:**
-  - classificadores: `modelos/*.pt`, gerados por `exportar_pipeline.py`;
-  - YOLO retreinado: `yolo_gpu/saida/pesos/`;
-  - YOLO A: `../TESTE_BOX_YOLO`.
+- **Pesos já no repositório (não precisa treinar):**
+  - classificadores: `modelos/classificador_recortes_b1_convnextpico_224_s{42,43,44}.pt`;
+  - YOLOs retreinados: `yolo_gpu/saida/pesos/G1_best.pt` … `G6_best.pt` (o fluxo final usa o G5);
+  - YOLO A: `../TESTE_BOX_YOLO/runs/detect/work/runs/modelA_yolo_p2/weights/best.pt`.
 - **Tempo de inferência:** ~3 s por imagem em CPU.
 
 ## Arquivos

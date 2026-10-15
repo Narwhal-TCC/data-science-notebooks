@@ -52,5 +52,5 @@ Classificação binária por imagem de sonar de varredura lateral. A imagem é p
 ```bash
 export SONAR_RAW_DIR=/caminho/dataset   # pastas 2010..2021 extraídas do zip
 python sonar_harness.py 999999          # executa a fila de experimentos
-python inferencia.py pasta_de_imagens/  # campeão (pesos em modelos/, fora do git)
+python inferencia.py pasta_de_imagens/  # campeão (pesos em modelos/, já no repositório)
 ```

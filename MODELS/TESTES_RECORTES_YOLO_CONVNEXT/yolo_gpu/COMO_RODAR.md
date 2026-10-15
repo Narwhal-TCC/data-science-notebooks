@@ -28,4 +28,4 @@ python treinar_yolo_gpu.py --zip PASTA_OU_ZIP_DO_DATASET --so G2 --device 0 --ho
 | G6 | YOLOv8s-P2 + AdamW | 1024 | 0,680 | 0,691 |
 
 - **Escolha pela validação:** AP50 + recall de objetos pequenos → **G5**.
-- **Saída:** `saida/resultados_yolo_gpu.csv`, `saida/runs/` (curvas) e `saida/pesos/` (fora do git).
+- **Saída:** `saida/resultados_yolo_gpu.csv`, `saida/runs/` (curvas) e `saida/pesos/` (pesos `G*_best.pt`).
