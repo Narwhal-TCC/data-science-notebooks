@@ -1,0 +1,5 @@
+modelos/*.pt
+__pycache__/
+*.tmp
+_retomada/
+_local/

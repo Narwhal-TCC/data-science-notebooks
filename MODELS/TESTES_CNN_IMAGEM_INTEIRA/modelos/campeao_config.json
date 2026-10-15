@@ -1,0 +1,50 @@
+{
+ "modelo": "convnextpico_320_adamw",
+ "descricao": "ConvNeXt-Pico (ImageNet) 320px, fine-tuning completo, AdamW+cosine; inferência = média dos 5 modelos dos folds + TTA (flip horizontal)",
+ "rotulo": "1 = imagem contém ao menos um MILCO (mine-like contact)",
+ "arquivos": [
+  "campeao_convnextpico_320_adamw_fold0.pt",
+  "campeao_convnextpico_320_adamw_fold1.pt",
+  "campeao_convnextpico_320_adamw_fold2.pt",
+  "campeao_convnextpico_320_adamw_fold3.pt",
+  "campeao_convnextpico_320_adamw_fold4.pt"
+ ],
+ "img_size": 320,
+ "threshold_max_f1": 0.6321455836296082,
+ "oof_no_threshold_max_f1": {
+  "precisao": 0.8233082706766918,
+  "recall": 0.8588235294117647,
+  "f1": 0.8406909788862563
+ },
+ "threshold_recall_85": 0.6321455836296082,
+ "oof_no_threshold_recall_85": {
+  "precisao": 0.8233082706766918,
+  "recall": 0.8588235294117647
+ },
+ "oof_auc": 0.9587570984678023,
+ "oof_pr_auc": 0.896088704230776,
+ "obs": "Thresholds calibrados nas 1170 predições out-of-fold (cada imagem prevista por um modelo que não a viu). A média dos 5 modelos tende a ser ligeiramente mais confiante que um modelo isolado; revalide o threshold com dados novos.",
+ "cfg": {
+  "img_size": 320,
+  "batch_size": 16,
+  "epochs": 20,
+  "patience": 6,
+  "optimizer": "adamw",
+  "lr": 0.00015,
+  "wd": 0.05,
+  "head_lr_mult": 10,
+  "scheduler": "cosine",
+  "warmup_frac": 0.05,
+  "freeze": "full",
+  "aug": "standard",
+  "mix": "none",
+  "loss": "bce",
+  "soften": 0.6,
+  "split": "cv5",
+  "fold": 0,
+  "tta": true,
+  "save_model": false,
+  "backbone": "convnext_pico",
+  "drop_path": 0.1
+ }
+}
