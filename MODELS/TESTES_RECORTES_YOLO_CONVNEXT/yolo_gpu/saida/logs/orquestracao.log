@@ -1,0 +1,17 @@
+[   0.1 min] figshare: [('2010.zip', 67514394), ('2015.zip', 22677520), ('2017.zip', 19163464), ('2018.zip', 106841977), ('2021.zip', 1611502), ('Training.zip', 395600052)]
+[   0.2 min] download ok
+[   0.2 min] dataset ok: {'train': 819, 'val': 175, 'test': 176}
+[   0.2 min] GPU 0: iniciando G2
+[   0.2 min] GPU 1: iniciando G3
+[ 121.4 min] GPU 0: G2 terminou (código 0) treino 121 min | AP50 val 0.666 teste 0.724 | recall peq. val 0.566
+[ 121.4 min] GPU 0: iniciando G4
+[ 181.5 min] GPU 1: G3 terminou (código 0) treino 181 min | AP50 val 0.697 teste 0.692 | recall peq. val 0.566
+[ 181.5 min] GPU 1: iniciando G1
+[ 242.2 min] GPU 1: G1 terminou (código 0) treino 60 min | AP50 val 0.670 teste 0.758 | recall peq. val 0.547
+[ 272.3 min] GPU 0: G4 terminou (código 0) treino 151 min | AP50 val 0.670 teste 0.685 | recall peq. val 0.491
+[ 272.3 min] GPU 0: iniciando G6
+[ 273.2 min] GPU 1: iniciando G5
+[ 423.2 min] GPU 0: G6 terminou (código 0) treino 150 min | AP50 val 0.680 teste 0.691 | recall peq. val 0.547
+[ 424.1 min] GPU 1: G5 terminou (código 0) treino 151 min | AP50 val 0.693 teste 0.722 | recall peq. val 0.623
+[ 424.1 min] RESUMO {"G1": {"treino_min": 60.5, "epocas": 315, "s/ep": 11.4, "AP50_val": 0.67, "AP50_test": 0.758, "recall_peq_val": 0.547}, "G2": {"treino_min": 120.8, "epocas": 247, "s/ep": 29.2, "AP50_val": 0.666, "AP50_test": 0.724, "recall_peq_val": 0.566}, "G3": {"treino_min": 180.8, "epocas": 264, "s/ep": 40.9, "AP50_val": 0.697, "AP50_test": 0.692, "recall_peq_val": 0.566}, "G4": {"treino_min": 150.7, "epocas": 306, "s/ep": 29.4, "AP50_val": 0.67, "AP50_test": 0.685, "recall_peq_val": 0.491}, "G5": {"treino_min": 150.6, "epocas": 221, "s/ep": 40.8, "AP50_val": 0.693, "AP50_test": 0.722, "recall_peq_val": 0.623}, "G6": {"treino_min": 150.5, "epocas": 192, "s/ep": 46.9, "AP50_val": 0.68, "AP50_test": 0.691, "recall_peq_val": 0.547}}
+[ 424.1 min] FIM

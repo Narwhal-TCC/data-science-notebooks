@@ -1,0 +1,27 @@
+{
+ "variante": "G3",
+ "modelo": "yolov8s-p2.yaml",
+ "imgsz": 1024,
+ "extra": {},
+ "treino_min": 180.8,
+ "val": {
+  "split": "val",
+  "AP50": 0.6972994998001564,
+  "recall@0.25": 0.5733333333333334,
+  "precisao@0.25": 0.8269230769230769,
+  "FP_por_imagem@0.25": 0.05142857142857143,
+  "recall_pequenos@0.25": 0.5660377358490566,
+  "n_objetos": 75,
+  "n_pequenos": 53
+ },
+ "test": {
+  "split": "test",
+  "AP50": 0.6923015125255981,
+  "recall@0.25": 0.6697247706422018,
+  "precisao@0.25": 0.7684210526315789,
+  "FP_por_imagem@0.25": 0.125,
+  "recall_pequenos@0.25": 0.6323529411764706,
+  "n_objetos": 109,
+  "n_pequenos": 68
+ }
+}

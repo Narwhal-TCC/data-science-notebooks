@@ -1,0 +1,27 @@
+{
+ "variante": "G2",
+ "modelo": "yolov8n-p2.yaml",
+ "imgsz": 1024,
+ "extra": {},
+ "treino_min": 120.8,
+ "val": {
+  "split": "val",
+  "AP50": 0.666412416204034,
+  "recall@0.25": 0.6133333333333333,
+  "precisao@0.25": 0.7796610169491526,
+  "FP_por_imagem@0.25": 0.07428571428571429,
+  "recall_pequenos@0.25": 0.5660377358490566,
+  "n_objetos": 75,
+  "n_pequenos": 53
+ },
+ "test": {
+  "split": "test",
+  "AP50": 0.7241955894434801,
+  "recall@0.25": 0.6513761467889908,
+  "precisao@0.25": 0.8255813953488372,
+  "FP_por_imagem@0.25": 0.08522727272727272,
+  "recall_pequenos@0.25": 0.6323529411764706,
+  "n_objetos": 109,
+  "n_pequenos": 68
+ }
+}

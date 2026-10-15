@@ -1,0 +1,45 @@
+{
+ "descricao": "Fluxo de 2 etapas com DETECTORES COMBINADOS (WBF): G5+TTA ⊕ Modelo A+TTA → recorte → ConvNeXt-Pico (3 sementes). Modo recall: melhor F2 na validação (recall pesa 4×) — prioriza encontrar minas.",
+ "detectores": [
+  {
+   "nome": "G5 (YOLOv8s-P2 1024, retreinado em GPU) + TTA",
+   "pesos": "../yolo_gpu/saida/pesos/G5_best.pt",
+   "imgsz": 1024,
+   "augment": true,
+   "iou_nms": 0.5
+  },
+  {
+   "nome": "Modelo A (YOLOv8n-P2 640) + TTA",
+   "pesos": "../../TESTE_BOX_YOLO/runs/detect/work/runs/modelA_yolo_p2/weights/best.pt",
+   "imgsz": 640,
+   "augment": true,
+   "iou_nms": 0.5
+  }
+ ],
+ "fusao": {
+  "metodo": "wbf",
+  "iou": 0.55,
+  "iou_nms": 0.5,
+  "conf": 0.2
+ },
+ "classificador": {
+  "arquivos": [
+   "classificador_recortes_b1_convnextpico_224_s42.pt",
+   "classificador_recortes_b1_convnextpico_224_s43.pt",
+   "classificador_recortes_b1_convnextpico_224_s44.pt"
+  ],
+  "modo": "m0.15",
+  "img_size": 224,
+  "aceita_min": 0.6
+ },
+ "metricas_teste": {
+  "MILCO_tp": 58,
+  "MILCO_fp": 25,
+  "n_MILCO": 75,
+  "MILCO_precisao": 0.6987951807228916,
+  "MILCO_recall": 0.7733333333333333,
+  "MILCO_f1": 0.7341772151898734,
+  "img_auc": 0.9725383920505871
+ },
+ "origem": "resultados/pipeline/fusao_detectores.json (F_G5tta+Atta_wbf, ponto F2 escolhido na validação)"
+}

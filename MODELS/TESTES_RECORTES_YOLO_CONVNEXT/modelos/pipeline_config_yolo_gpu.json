@@ -1,0 +1,28 @@
+{
+ "descricao": "Fluxo de 2 etapas: YOLO retreinado em GPU (G5: YOLOv8s-P2 1024 px + augmentação p/ objetos pequenos) localiza → recorte com margem → ConvNeXt-Pico (3 sementes) classifica MILCO × NOMBO",
+ "detector": {
+  "pesos": "../yolo_gpu/saida/pesos/G5_best.pt",
+  "imgsz": 1024,
+  "augment": false,
+  "conf": 0.3,
+  "iou_nms": 0.5
+ },
+ "classificador": {
+  "arquivos": [
+   "classificador_recortes_b1_convnextpico_224_s42.pt",
+   "classificador_recortes_b1_convnextpico_224_s43.pt",
+   "classificador_recortes_b1_convnextpico_224_s44.pt"
+  ],
+  "modo": "m0.15",
+  "img_size": 224,
+  "aceita_min": 0.0
+ },
+ "metricas_teste": {
+  "MILCO_precisao": 0.7878787878787878,
+  "MILCO_recall": 0.6933333333333334,
+  "MILCO_f1": 0.7375886524822695,
+  "MILCO_AP50": 0.6591998185831239,
+  "img_auc": 0.9365853658536585
+ },
+ "origem": "MODELS/TESTES_RECORTES_YOLO_CONVNEXT/resultados/pipeline/fase_e.json (P6_yolo_gpu; conf e limiar escolhidos na validação)"
+}

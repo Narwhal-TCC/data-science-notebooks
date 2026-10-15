@@ -1,0 +1,32 @@
+{
+ "variante": "G5",
+ "modelo": "yolov8s-p2.yaml",
+ "imgsz": 1024,
+ "extra": {
+  "mosaic": 0.3,
+  "copy_paste": 0.3,
+  "scale": 0.3,
+  "flipud": 0.0
+ },
+ "treino_min": 150.6,
+ "val": {
+  "split": "val",
+  "AP50": 0.6929560997771127,
+  "recall@0.25": 0.6666666666666666,
+  "precisao@0.25": 0.7352941176470589,
+  "FP_por_imagem@0.25": 0.10285714285714286,
+  "recall_pequenos@0.25": 0.6226415094339622,
+  "n_objetos": 75,
+  "n_pequenos": 53
+ },
+ "test": {
+  "split": "test",
+  "AP50": 0.7222443214515601,
+  "recall@0.25": 0.6330275229357798,
+  "precisao@0.25": 0.7263157894736842,
+  "FP_por_imagem@0.25": 0.14772727272727273,
+  "recall_pequenos@0.25": 0.5735294117647058,
+  "n_objetos": 109,
+  "n_pequenos": 68
+ }
+}

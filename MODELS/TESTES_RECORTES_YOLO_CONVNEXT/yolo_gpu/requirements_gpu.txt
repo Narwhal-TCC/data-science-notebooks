@@ -1,0 +1,5 @@
+# Instale primeiro o PyTorch com CUDA conforme https://pytorch.org/get-started/locally/
+# (ex.: pip install torch torchvision --index-url https://download.pytorch.org/whl/cu124)
+ultralytics>=8.3
+numpy
+pillow

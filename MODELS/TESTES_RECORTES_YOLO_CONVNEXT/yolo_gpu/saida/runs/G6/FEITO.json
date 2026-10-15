@@ -1,0 +1,30 @@
+{
+ "variante": "G6",
+ "modelo": "yolov8s-p2.yaml",
+ "imgsz": 1024,
+ "extra": {
+  "optimizer": "AdamW",
+  "lr0": 0.001
+ },
+ "treino_min": 150.5,
+ "val": {
+  "split": "val",
+  "AP50": 0.6802102552204451,
+  "recall@0.25": 0.5866666666666667,
+  "precisao@0.25": 0.8461538461538461,
+  "FP_por_imagem@0.25": 0.045714285714285714,
+  "recall_pequenos@0.25": 0.5471698113207547,
+  "n_objetos": 75,
+  "n_pequenos": 53
+ },
+ "test": {
+  "split": "test",
+  "AP50": 0.6910123696945462,
+  "recall@0.25": 0.6422018348623854,
+  "precisao@0.25": 0.7446808510638298,
+  "FP_por_imagem@0.25": 0.13636363636363635,
+  "recall_pequenos@0.25": 0.6176470588235294,
+  "n_objetos": 109,
+  "n_pequenos": 68
+ }
+}

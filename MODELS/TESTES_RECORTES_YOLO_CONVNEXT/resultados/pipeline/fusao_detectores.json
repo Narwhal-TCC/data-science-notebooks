@@ -1,0 +1,575 @@
+{
+ "F_G5tta+mosaico_wbf": {
+  "fontes": [
+   "G5tta",
+   "mosaico"
+  ],
+  "metodo": "wbf",
+  "deteccao": {
+   "val": {
+    "tag": "F_G5tta+mosaico_wbf",
+    "split": "val",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7204325333372632,
+    "recall": 0.64,
+    "precisao": 0.6,
+    "FP_por_img": 0.18285714285714286,
+    "recall_pequenos": 0.6226415094339622,
+    "n_obj": 75
+   },
+   "test": {
+    "tag": "F_G5tta+mosaico_wbf",
+    "split": "test",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7376359014070324,
+    "recall": 0.7247706422018348,
+    "precisao": 0.6422764227642277,
+    "FP_por_img": 0.25,
+    "recall_pequenos": 0.7058823529411765,
+    "n_obj": 109
+   }
+  },
+  "varredura_val": {
+   "MILCO_tp": 43,
+   "MILCO_fp": 95,
+   "n_MILCO": 50,
+   "MILCO_recall": 0.86,
+   "MILCO_precisao": 0.3115942028985507
+  },
+  "varredura_test": {
+   "MILCO_tp": 63,
+   "MILCO_fp": 136,
+   "n_MILCO": 75,
+   "MILCO_recall": 0.84,
+   "MILCO_precisao": 0.3165829145728643
+  },
+  "F1": {
+   "conf": 0.4,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.7777777777777778,
+    "MILCO_recall": 0.7,
+    "MILCO_f1": 0.7368421052631577,
+    "MILCO_AP50": 0.6647273897273898,
+    "MILCO_tp": 35,
+    "MILCO_fp": 10,
+    "MILCO_fn": 15,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 35,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 15,
+     "NOMBO\u2192NOMBO": 6,
+     "NOMBO\u2192MILCO": 4,
+     "NOMBO\u2192perdido": 15
+    },
+    "img_auc": 0.9317897371714643,
+    "img_f1@0.5": 0.7936507936507936
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.819672131147541,
+    "MILCO_recall": 0.6666666666666666,
+    "MILCO_f1": 0.7352941176470588,
+    "MILCO_AP50": 0.648344815748537,
+    "MILCO_tp": 50,
+    "MILCO_fp": 11,
+    "MILCO_fn": 25,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 50,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 23,
+     "NOMBO\u2192NOMBO": 16,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 16
+    },
+    "img_auc": 0.9474254742547426,
+    "img_f1@0.5": 0.821917808219178
+   },
+   "val_score": 0.7368421052631577,
+   "test_score": 0.7352941176470588
+  },
+  "F2": {
+   "conf": 0.15,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.49411764705882355,
+    "MILCO_recall": 0.84,
+    "MILCO_f1": 0.6222222222222222,
+    "MILCO_AP50": 0.7456652837868263,
+    "MILCO_tp": 42,
+    "MILCO_fp": 43,
+    "MILCO_fn": 8,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 42,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 8,
+     "NOMBO\u2192NOMBO": 10,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 10
+    },
+    "img_auc": 0.9701710471422612,
+    "img_f1@0.5": 0.7936507936507936
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.49166666666666664,
+    "MILCO_recall": 0.7866666666666666,
+    "MILCO_f1": 0.6051282051282051,
+    "MILCO_AP50": 0.7367934473287016,
+    "MILCO_tp": 59,
+    "MILCO_fp": 61,
+    "MILCO_fn": 16,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 59,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 14,
+     "NOMBO\u2192NOMBO": 21,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 11
+    },
+    "img_auc": 0.9683830171635049,
+    "img_f1@0.5": 0.821917808219178
+   },
+   "val_score": 0.7368421052631579,
+   "test_score": 0.7023809523809523
+  }
+ },
+ "F_G5tta+mosaico_nms": {
+  "fontes": [
+   "G5tta",
+   "mosaico"
+  ],
+  "metodo": "nms",
+  "deteccao": {
+   "val": {
+    "tag": "F_G5tta+mosaico_nms",
+    "split": "val",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.6915400923906992,
+    "recall": 0.76,
+    "precisao": 0.49137931034482757,
+    "FP_por_img": 0.33714285714285713,
+    "recall_pequenos": 0.7547169811320755,
+    "n_obj": 75
+   },
+   "test": {
+    "tag": "F_G5tta+mosaico_nms",
+    "split": "test",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7124382734854269,
+    "recall": 0.7798165137614679,
+    "precisao": 0.480225988700565,
+    "FP_por_img": 0.5227272727272727,
+    "recall_pequenos": 0.75,
+    "n_obj": 109
+   }
+  },
+  "varredura_val": {
+   "MILCO_tp": 43,
+   "MILCO_fp": 136,
+   "n_MILCO": 50,
+   "MILCO_recall": 0.86,
+   "MILCO_precisao": 0.24022346368715083
+  },
+  "varredura_test": {
+   "MILCO_tp": 64,
+   "MILCO_fp": 197,
+   "n_MILCO": 75,
+   "MILCO_recall": 0.8533333333333334,
+   "MILCO_precisao": 0.24521072796934865
+  },
+  "F1": {
+   "conf": 0.4,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.5492957746478874,
+    "MILCO_recall": 0.78,
+    "MILCO_f1": 0.6446280991735538,
+    "MILCO_AP50": 0.690461311011842,
+    "MILCO_tp": 39,
+    "MILCO_fp": 32,
+    "MILCO_fn": 11,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 39,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 11,
+     "NOMBO\u2192NOMBO": 8,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 12
+    },
+    "img_auc": 0.9545264914476429,
+    "img_f1@0.5": 0.8235294117647058
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.6195652173913043,
+    "MILCO_recall": 0.76,
+    "MILCO_f1": 0.6826347305389221,
+    "MILCO_AP50": 0.7139813635711235,
+    "MILCO_tp": 57,
+    "MILCO_fp": 35,
+    "MILCO_fn": 18,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 57,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 16,
+     "NOMBO\u2192NOMBO": 20,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 12
+    },
+    "img_auc": 0.9671183378500451,
+    "img_f1@0.5": 0.8809523809523809
+   },
+   "val_score": 0.6446280991735538,
+   "test_score": 0.6826347305389221
+  },
+  "F2": {
+   "conf": 0.25,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.4827586206896552,
+    "MILCO_recall": 0.84,
+    "MILCO_f1": 0.6131386861313869,
+    "MILCO_AP50": 0.7212710276110322,
+    "MILCO_tp": 42,
+    "MILCO_fp": 45,
+    "MILCO_fn": 8,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 42,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 8,
+     "NOMBO\u2192NOMBO": 10,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 10
+    },
+    "img_auc": 0.9675636211931582,
+    "img_f1@0.5": 0.8235294117647058
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.48,
+    "MILCO_recall": 0.8,
+    "MILCO_f1": 0.6,
+    "MILCO_AP50": 0.7322195415487357,
+    "MILCO_tp": 60,
+    "MILCO_fp": 65,
+    "MILCO_fn": 15,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 60,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 13,
+     "NOMBO\u2192NOMBO": 21,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 11
+    },
+    "img_auc": 0.9658536585365854,
+    "img_f1@0.5": 0.8809523809523809
+   },
+   "val_score": 0.7317073170731707,
+   "test_score": 0.7058823529411765
+  }
+ },
+ "F_G5tta+Atta_wbf": {
+  "fontes": [
+   "G5tta",
+   "Atta"
+  ],
+  "metodo": "wbf",
+  "deteccao": {
+   "val": {
+    "tag": "F_G5tta+Atta_wbf",
+    "split": "val",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7318075954143892,
+    "recall": 0.6533333333333333,
+    "precisao": 0.7313432835820896,
+    "FP_por_img": 0.10285714285714286,
+    "recall_pequenos": 0.6415094339622641,
+    "n_obj": 75
+   },
+   "test": {
+    "tag": "F_G5tta+Atta_wbf",
+    "split": "test",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7600592870613538,
+    "recall": 0.7155963302752294,
+    "precisao": 0.7722772277227723,
+    "FP_por_img": 0.13068181818181818,
+    "recall_pequenos": 0.6617647058823529,
+    "n_obj": 109
+   }
+  },
+  "varredura_val": {
+   "MILCO_tp": 42,
+   "MILCO_fp": 55,
+   "n_MILCO": 50,
+   "MILCO_recall": 0.84,
+   "MILCO_precisao": 0.4329896907216495
+  },
+  "varredura_test": {
+   "MILCO_tp": 63,
+   "MILCO_fp": 78,
+   "n_MILCO": 75,
+   "MILCO_recall": 0.84,
+   "MILCO_precisao": 0.44680851063829785
+  },
+  "F1": {
+   "conf": 0.4,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.8372093023255814,
+    "MILCO_recall": 0.72,
+    "MILCO_f1": 0.7741935483870969,
+    "MILCO_AP50": 0.6917238608432597,
+    "MILCO_tp": 36,
+    "MILCO_fp": 7,
+    "MILCO_fn": 14,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 36,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 14,
+     "NOMBO\u2192NOMBO": 7,
+     "NOMBO\u2192MILCO": 3,
+     "NOMBO\u2192perdido": 15
+    },
+    "img_auc": 0.9155193992490614,
+    "img_f1@0.5": 0.7666666666666667
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.828125,
+    "MILCO_recall": 0.7066666666666667,
+    "MILCO_f1": 0.762589928057554,
+    "MILCO_AP50": 0.6926610921400033,
+    "MILCO_tp": 53,
+    "MILCO_fp": 11,
+    "MILCO_fn": 22,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 53,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 20,
+     "NOMBO\u2192NOMBO": 15,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 17
+    },
+    "img_auc": 0.9377597109304426,
+    "img_f1@0.5": 0.8767123287671232
+   },
+   "val_score": 0.7741935483870969,
+   "test_score": 0.762589928057554
+  },
+  "F2": {
+   "conf": 0.2,
+   "aceita": 0.6,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.6666666666666666,
+    "MILCO_recall": 0.8,
+    "MILCO_f1": 0.7272727272727272,
+    "MILCO_AP50": 0.7504257598937345,
+    "MILCO_tp": 40,
+    "MILCO_fp": 20,
+    "MILCO_fn": 10,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 40,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 10,
+     "NOMBO\u2192NOMBO": 8,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 12
+    },
+    "img_auc": 0.9578639966624948,
+    "img_f1@0.5": 0.7666666666666667
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.6987951807228916,
+    "MILCO_recall": 0.7733333333333333,
+    "MILCO_f1": 0.7341772151898734,
+    "MILCO_AP50": 0.7432658346748163,
+    "MILCO_tp": 58,
+    "MILCO_fp": 25,
+    "MILCO_fn": 17,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 58,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 15,
+     "NOMBO\u2192NOMBO": 21,
+     "NOMBO\u2192MILCO": 2,
+     "NOMBO\u2192perdido": 11
+    },
+    "img_auc": 0.9725383920505871,
+    "img_f1@0.5": 0.8767123287671232
+   },
+   "val_score": 0.7692307692307692,
+   "test_score": 0.7571801566579633
+  }
+ },
+ "F_G5tta+mosaico+Atta_wbf": {
+  "fontes": [
+   "G5tta",
+   "mosaico",
+   "Atta"
+  ],
+  "metodo": "wbf",
+  "deteccao": {
+   "val": {
+    "tag": "F_G5tta+mosaico+Atta_wbf",
+    "split": "val",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7326501025252622,
+    "recall": 0.64,
+    "precisao": 0.7384615384615385,
+    "FP_por_img": 0.09714285714285714,
+    "recall_pequenos": 0.6226415094339622,
+    "n_obj": 75
+   },
+   "test": {
+    "tag": "F_G5tta+mosaico+Atta_wbf",
+    "split": "test",
+    "iou_nms": 0.5,
+    "conf": 0.25,
+    "AP50": 0.7445170896076404,
+    "recall": 0.7339449541284404,
+    "precisao": 0.7272727272727273,
+    "FP_por_img": 0.17045454545454544,
+    "recall_pequenos": 0.7058823529411765,
+    "n_obj": 109
+   }
+  },
+  "varredura_val": {
+   "MILCO_tp": 43,
+   "MILCO_fp": 86,
+   "n_MILCO": 50,
+   "MILCO_recall": 0.86,
+   "MILCO_precisao": 0.3333333333333333
+  },
+  "varredura_test": {
+   "MILCO_tp": 62,
+   "MILCO_fp": 125,
+   "n_MILCO": 75,
+   "MILCO_recall": 0.8266666666666667,
+   "MILCO_precisao": 0.3315508021390374
+  },
+  "F1": {
+   "conf": 0.3,
+   "aceita": 0.0,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.74,
+    "MILCO_recall": 0.74,
+    "MILCO_f1": 0.74,
+    "MILCO_AP50": 0.6854191919191919,
+    "MILCO_tp": 37,
+    "MILCO_fp": 13,
+    "MILCO_fn": 13,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 37,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 13,
+     "NOMBO\u2192NOMBO": 6,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 14
+    },
+    "img_auc": 0.9428452231956612,
+    "img_f1@0.5": 0.7666666666666667
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.7777777777777778,
+    "MILCO_recall": 0.7466666666666667,
+    "MILCO_f1": 0.761904761904762,
+    "MILCO_AP50": 0.7133459598923904,
+    "MILCO_tp": 56,
+    "MILCO_fp": 16,
+    "MILCO_fn": 19,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 56,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 17,
+     "NOMBO\u2192NOMBO": 17,
+     "NOMBO\u2192MILCO": 3,
+     "NOMBO\u2192perdido": 14
+    },
+    "img_auc": 0.9472448057813911,
+    "img_f1@0.5": 0.8611111111111112
+   },
+   "val_score": 0.74,
+   "test_score": 0.761904761904762
+  },
+  "F2": {
+   "conf": 0.3,
+   "aceita": 0.0,
+   "val": {
+    "split": "val",
+    "MILCO_precisao": 0.74,
+    "MILCO_recall": 0.74,
+    "MILCO_f1": 0.74,
+    "MILCO_AP50": 0.6854191919191919,
+    "MILCO_tp": 37,
+    "MILCO_fp": 13,
+    "MILCO_fn": 13,
+    "n_MILCO": 50,
+    "confusao": {
+     "MILCO\u2192MILCO": 37,
+     "MILCO\u2192NOMBO": 0,
+     "MILCO\u2192perdido": 13,
+     "NOMBO\u2192NOMBO": 6,
+     "NOMBO\u2192MILCO": 5,
+     "NOMBO\u2192perdido": 14
+    },
+    "img_auc": 0.9428452231956612,
+    "img_f1@0.5": 0.7666666666666667
+   },
+   "test": {
+    "split": "test",
+    "MILCO_precisao": 0.7777777777777778,
+    "MILCO_recall": 0.7466666666666667,
+    "MILCO_f1": 0.761904761904762,
+    "MILCO_AP50": 0.7133459598923904,
+    "MILCO_tp": 56,
+    "MILCO_fp": 16,
+    "MILCO_fn": 19,
+    "n_MILCO": 75,
+    "confusao": {
+     "MILCO\u2192MILCO": 56,
+     "MILCO\u2192NOMBO": 2,
+     "MILCO\u2192perdido": 17,
+     "NOMBO\u2192NOMBO": 17,
+     "NOMBO\u2192MILCO": 3,
+     "NOMBO\u2192perdido": 14
+    },
+    "img_auc": 0.9472448057813911,
+    "img_f1@0.5": 0.8611111111111112
+   },
+   "val_score": 0.74,
+   "test_score": 0.7526881720430109
+  }
+ }
+}
