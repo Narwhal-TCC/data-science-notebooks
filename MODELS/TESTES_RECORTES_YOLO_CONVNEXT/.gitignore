@@ -1,5 +1,3 @@
-modelos/*.pt
-yolo_gpu/saida/pesos/
 yolo_gpu/work/
 _local/
 __pycache__/
