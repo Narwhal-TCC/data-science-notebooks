@@ -1,0 +1,1 @@
+{"tag": "solo_convnext_pico", "seed": 42, "nomes": ["convnext_pico"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.9423999999999999, "melhor_epoca": 15, "epocas": 23, "treino_s": 91.87510681152344}

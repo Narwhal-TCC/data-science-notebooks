@@ -1,0 +1,1 @@
+{"tag": "solo_resnet50", "seed": 43, "nomes": ["resnet50"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.86, "melhor_epoca": 18, "epocas": 26, "treino_s": 120.5468122959137}

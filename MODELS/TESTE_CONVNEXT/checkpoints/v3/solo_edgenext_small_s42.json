@@ -1,0 +1,1 @@
+{"tag": "solo_edgenext_small", "seed": 42, "nomes": ["edgenext_small"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.9112, "melhor_epoca": 12, "epocas": 20, "treino_s": 93.80125594139099}

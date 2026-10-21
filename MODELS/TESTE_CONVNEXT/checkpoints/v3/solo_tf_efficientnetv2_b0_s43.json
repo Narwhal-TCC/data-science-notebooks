@@ -1,0 +1,1 @@
+{"tag": "solo_tf_efficientnetv2_b0", "seed": 43, "nomes": ["tf_efficientnetv2_b0"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.9, "melhor_epoca": 6, "epocas": 14, "treino_s": 31.506198167800903}

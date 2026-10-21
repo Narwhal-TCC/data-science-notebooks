@@ -1,0 +1,1 @@
+{"tag": "solo_densenet121", "seed": 44, "nomes": ["densenet121"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.9136, "melhor_epoca": 12, "epocas": 20, "treino_s": 104.01785707473755}

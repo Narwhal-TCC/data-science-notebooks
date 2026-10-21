@@ -1,0 +1,43 @@
+{
+  "modo": "fusao_edgenext_small",
+  "backbones": [
+    "convnext_pico",
+    "edgenext_small"
+  ],
+  "seed": 42,
+  "batch_size": 12,
+  "img_size": 224,
+  "class_names": [
+    "MILCO",
+    "NOMBO"
+  ],
+  "melhor_epoca": 11,
+  "epocas_treinadas": 19,
+  "val_auc": 0.9184,
+  "teste": {
+    "acc": 0.8623853211009175,
+    "prec": 0.8636144663667599,
+    "rec": 0.8623853211009175,
+    "f1": 0.8629207346945331,
+    "auc": 0.9247058823529413
+  },
+  "teste_tta": {
+    "acc": 0.8715596330275229,
+    "prec": 0.8715596330275229,
+    "rec": 0.8715596330275229,
+    "f1": 0.8715596330275229,
+    "auc": 0.9333333333333333
+  },
+  "f1_nombo": 0.782608695652174,
+  "matriz_confusao": [
+    [
+      67,
+      8
+    ],
+    [
+      7,
+      27
+    ]
+  ],
+  "salvo_em": "2026-10-20T23:06:24"
+}

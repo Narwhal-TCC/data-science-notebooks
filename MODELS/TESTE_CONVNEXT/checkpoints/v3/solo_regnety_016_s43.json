@@ -1,0 +1,1 @@
+{"tag": "solo_regnety_016", "seed": 43, "nomes": ["regnety_016"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.8528, "melhor_epoca": 9, "epocas": 17, "treino_s": 71.50495648384094}

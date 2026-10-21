@@ -1,0 +1,1 @@
+{"tag": "fusao_convnext_pico+mobilevitv2_100_b12", "seed": 44, "nomes": ["convnext_pico", "mobilevitv2_100"], "batch_size": 12, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.8695999999999999, "melhor_epoca": 5, "epocas": 13, "treino_s": 117.78963327407837}

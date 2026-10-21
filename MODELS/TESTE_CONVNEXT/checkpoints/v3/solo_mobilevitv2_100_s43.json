@@ -1,0 +1,1 @@
+{"tag": "solo_mobilevitv2_100", "seed": 43, "nomes": ["mobilevitv2_100"], "batch_size": 32, "branch_dropout": 0.0, "norm_features": false, "val_auc": 0.9016, "melhor_epoca": 6, "epocas": 14, "treino_s": 53.675203800201416}
