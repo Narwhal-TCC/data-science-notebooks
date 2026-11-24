@@ -1,0 +1,4 @@
+modelo,parametros_M,GFLOPs,inferencia_ms
+A - YOLO+P2,2.921,12.2,7.5
+B - YOLO+P2+CBAM,3.272,13.0,8.2
+G5 - YOLOv8s+P2,10.6267,,33.9648

@@ -1,0 +1,6 @@
+path: D:/testte/SEPARACAO_MODELS/TESTE_BOX_YOLO/work/yolo_dataset
+train: images/train
+val: images/val
+test: images/test
+names:
+  0: object

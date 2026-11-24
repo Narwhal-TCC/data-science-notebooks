@@ -12,4 +12,6 @@ MODELS/TESTE_JUNCAO_200/
 SEPARACAO_MODELS/
 MODELS/TESTE_CONVNEXT/crops_dataset/
 MODELS/TESTE_CONVNEXT/crops_dataset_m050/
-MODELS/TESTE_CONNEXT_FUSAO/crops_dataset
+MODELS/TESTE_CONNEXT_FUSAO/crops_dataset/
+MODELS/TESTE_CONNEXT/checkpoints/
+MODELS/TESTE_CONVNEXT/checkpoints/fusion_convnext_mobilenetv2_melhor.pt
